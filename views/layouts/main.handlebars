@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="section">
+      <nav
+        class="navbar has-background-success-dark is-rounded"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-white is-size-2" href="/">
+            Ye Olde Tech Blog | |
+          </a>
+        </div>
+
+        <div
+          class="dash-home has-text-centered is-flex is-justify-content-center is-align-items-center ml-6"
+        >
+          <a
+            class="navbar-item has-text-white is-size-2 has-text-centered"
+            href="/home"
+          >
+            Home
+          </a>
+          <span class="has-text-white is-size-2">|</span>
+          <a class="navbar-item has-text-white is-size-2" href="/dashboard">
+            Dashboard
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+          <div class="navbar-start">
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="/login" class="button is-light">
+                  Login/Register
+                </a>
+                <a href="/logout" class="button is-light">
+                  Logout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    {{{body}}}
+
+  </body>
+
+</html>

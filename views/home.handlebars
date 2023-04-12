@@ -1,0 +1,16 @@
+<style>
+  .move-right {
+    margin-left: 150px;
+  }
+</style>
+
+<h2 class="align-center move-right is-size-3"> All Posts </h2>
+{{#each posts}}
+  <section class="card"
+    <a href="/posts/{{id}}" class="card-body">
+      <h3 class="card-title">{{title}}</h3>
+      <h5>Posted {{user.username}} on {{createdAt}}</h5>
+      <p class="card-text">{{content}}</p>
+    </a>
+    </section>
+{{/each}}

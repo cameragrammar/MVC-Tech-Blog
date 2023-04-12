@@ -1,0 +1,64 @@
+<body>
+  <div class="container">
+    <h3 class="title">Login</h3>
+    <form action="/login" method="post">
+      <div class="field">
+        <label class="label">e-mail</label>
+        <div class="control">
+          <input type="email" class="input" name="email" required />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">password</label>
+        <div class="control">
+          <input type="password" class="input" name="password" required />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <form id:"login-form" action="/login" method="post">
+          <button
+            type="submit"
+            class="button has-background-success-dark has-text-white"
+          >Login</button>
+          </form>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div class="container">
+    <h3 class="title">Register</h3>
+    <form action="/register" method="post">
+      <div class="field">
+        <label class="label">username</label>
+        <div class="control">
+          <input type="username" class="input" name="username" required />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">e-mail</label>
+        <div class="control">
+          <input type="e-mail" class="input" name="e-mail" required />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">password</label>
+        <div class="control">
+          <input type="password" class="input" name="password" required />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button
+            type="submit"
+            class="button has-background-success-dark has-text-white"
+          >Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
