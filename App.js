@@ -14,6 +14,7 @@ const sequelize = require("./config/connection");
 const helpers = require("./utils/helpers");
 
 const app = express();
+const host = "0.0.0.0";
 const PORT = process.env.PORT || 3000;
 
 const hbs = exphbs.create({
@@ -97,6 +98,8 @@ const User = require("./models/user");
   await Comment.sync({ force: true });
 
   sequelize.sync({ force: true }).then(() => {
-    app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+    app.listen(PORT, host, () =>
+      console.log(`Server is running on port ${PORT}`)
+    );
   });
 })();
