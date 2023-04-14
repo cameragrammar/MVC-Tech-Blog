@@ -1,6 +1,6 @@
 This my tech blog, named "Ye Olde Tech Blog"
 
-To run the app: 
+To run the app LOCALLY: 
 1. Download or clone the github repository.
 2. Run 'npm install' from the root folder to install dependencies.
 3. Create .env file with the following:
@@ -15,3 +15,5 @@ To run the app:
     c. quit
 5. Invoke App.js using the command 'node App.js'.    
 
+DEPLOYED APP ON HEROKU:
+https://mvc-tech-blog-hans.herokuapp.com/dashboard
