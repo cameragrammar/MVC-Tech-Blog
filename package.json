@@ -27,6 +27,7 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.2.0",
     "passport": "^0.6.0",
+    "railway": "^2.0.17",
     "sequelize": "^6.31.0"
   },
   "devDependencies": {
