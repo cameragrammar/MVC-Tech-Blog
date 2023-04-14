@@ -8,6 +8,9 @@
     "start": "node .",
     "start:dev": "nodemon ."
   },
+  "engines": {
+    "node": "19"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cameragrammar/MVC-Tech-Blog.git"
