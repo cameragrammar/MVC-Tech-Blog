@@ -5,6 +5,12 @@ class Post extends Model {}
 
 Post.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -13,21 +19,23 @@ Post.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    author: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
+    // author: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // date_created: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    //   // defaultValue: DataTypes.NOW,
+    //   defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),
+    // },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "Post",
+    modelName: "post",
+    timestamps: true,
   }
 );
 

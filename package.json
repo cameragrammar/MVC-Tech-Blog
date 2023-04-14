@@ -4,7 +4,9 @@
   "description": "mvc-tech-blog",
   "main": "App.js",
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "start": "node .",
+    "start:dev": "nodemon ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,8 @@
     "mysql2": "^3.2.0",
     "passport": "^0.6.0",
     "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }

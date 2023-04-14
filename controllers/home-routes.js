@@ -14,10 +14,6 @@ router.get("/home", (req, res) => {
   res.render("home", {});
 });
 
-router.get("/dashboard", (req, res) => {
-  res.render("dashboard", {});
-});
-
 //router.get("/dashboard/create", (req, res) => {
 //if (!req.user) {
 //res.redirect("/login");

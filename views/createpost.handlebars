@@ -1,6 +1,6 @@
 <div class="container mb-5 pt-3">
   <h2 class="title pb-4">Create a New Post</h2>
-  <form action="/dashboard/create/" method="POST">
+  <form action="/api/post/create" method="POST" id="create-post-form">
     <input type="hidden" name="author" value="{{author}}" />
     <div class="field">
       <label class="label" for="title">Title</label>
@@ -30,11 +30,18 @@
     </div>
     <div class="field is-grouped">
       <div class="control">
-        <button type="submit" class="button is-link">Submit</button>
+        <button
+          type="submit"
+          class="button is-link has-background-success-dark"
+        >Submit</button>
       </div>
       <div class="control">
-        <a href="/dashboard" class="button is-link is-light">Cancel</a>
+        <a
+          href="/dashboard"
+          class="button is-link is-light has-text-success-dark"
+        >Cancel</a>
       </div>
     </div>
   </form>
+  <script src="/js/createpost.js"></script>
 </div>
