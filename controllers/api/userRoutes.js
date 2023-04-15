@@ -24,35 +24,42 @@ router.post("/", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
-      where: { username: req.body.username },
+      where: { email: req.body.email },
     });
     if (!userData) {
-      res.status(400).json({ message: "Incorrect username." });
+      // res.status(400).json({ message: "Incorrect username." });
+      res.redirect("/login");
       return;
     }
     const validPassword = await userData.checkPassword(req.body.password);
     if (!validPassword) {
-      res.status(400).json({ message: "Incorrect password." });
+      // res.status(400).json({ message: "Incorrect password." });
+      res.redirect("/login");
       return;
     }
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      res.json({ user: userData, message: "You are logged in!" });
+      // res.json({ user: userData, message: "You are logged in!" });
+      res.redirect("/dashboard");
     });
   } catch (err) {
-    res.status(400).json(err);
+    // res.status(400).json(err);
+    console.error(err);
+    res.redirect("/login");
   }
 });
 
 //LOGOUT a user
-router.post("/logout", (req, res) => {
-  if (req.session.loggedIn) {
+router.get("/logout", (req, res) => {
+  console.log("req.session.logged_in: ", req.session.logged_in);
+
+  if (req.session.logged_in) {
     req.session.destroy(() => {
-      res.status(204).end();
+      res.redirect("/login");
     });
   } else {
-    res.status(404).end();
+    res.redirect("/login");
   }
 });
 

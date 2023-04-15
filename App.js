@@ -93,11 +93,11 @@ const User = require("./models/user");
     await sequelize.query(query);
   }
 
-  await User.sync({ force: true });
-  await Post.sync({ force: true });
-  await Comment.sync({ force: true });
+  await User.sync({ alter: true });
+  await Post.sync({ alter: true });
+  await Comment.sync({ alter: true });
 
-  sequelize.sync({ force: true }).then(() => {
+  sequelize.sync({ alter: true }).then(() => {
     app.listen(PORT, host, () =>
       console.log(`Server is running on port ${PORT}`)
     );

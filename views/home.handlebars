@@ -5,12 +5,15 @@
 </style>
 
 <h2 class="align-center move-right is-size-3"> All Posts </h2>
-{{#each posts}}
-  <section class="card"
-    <a href="/posts/{{id}}" class="card-body">
-      <h3 class="card-title">{{title}}</h3>
-      <h5>Posted {{user.username}} on {{createdAt}}</h5>
-      <p class="card-text">{{content}}</p>
-    </a>
-    </section>
-{{/each}}
+
+  <hr>
+  {{#if posts}}
+    {{#each posts}}
+      {{> post-info this}}
+      <div class="buttons is-centered">
+        <a href="/dashboard/edit/{{id}}" class="button is-warning">Edit Post</a>
+      </div>
+    {{/each}}
+  {{else}}
+    <h6 class="pb-4 has-text-centered is-italic">You do not have any posts currently.</h6>
+  {{/if}}

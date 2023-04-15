@@ -10,8 +10,27 @@ router.get("/login", (req, res) => {
   res.render("login", {});
 });
 
-router.get("/home", (req, res) => {
-  res.render("home", {});
+router.get("/home", async (req, res) => {
+  try {
+    const postData = await Post.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ["username"],
+        },
+      ],
+    });
+
+    const posts = postData.map((post) => post.get({ plain: true }));
+
+    console.log("Posts:", posts);
+    res.render("home", {
+      posts,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
 //router.get("/dashboard/create", (req, res) => {

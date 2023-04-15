@@ -76,7 +76,7 @@ router.post("/create", async (req, res) => {
   try {
     const { title, content } = req.body;
 
-    const userId = req.session.userId;
+    const userId = req.session.user_id;
 
     console.log("title: ", title);
 
