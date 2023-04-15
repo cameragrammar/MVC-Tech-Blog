@@ -17,3 +17,8 @@ To run the app LOCALLY:
 
 DEPLOYED APP ON HEROKU:
 https://mvc-tech-blog-hans.herokuapp.com/dashboard
+1. Open the page and if you navigate to the Dashboard, you will be directed to the login/register screen. You can also login/register from the button at the top right of the Nav Bar.
+2. Upon either registering or logging in, you'll be able to create a new post where you can enter the 'title' and the 'content.'
+3. The Dashboard will show all of the posts created from your user account you just created or logged in to.
+4. The Home link will show all of the posts created by all registered users of the page.
+5. Use the "Logout" button to log your user out and end the session. 
