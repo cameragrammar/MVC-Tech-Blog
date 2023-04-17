@@ -44,15 +44,25 @@ To run this app locally:
 3. Open your terminal from the root folder "MVC-Tech-Blog" 
 4. Install all necessary dependencies with the command 'npm install'
 5. Create a new .env file in the root folder with the following:
+    <br>
     a. DB_NAME="mvc_db"
+    <br>
     b. DB_USER="root"
+    <br>
     c. DB_PASSWORD="password"
+    <br>
     d. DB_HOST="localhost"
+    <br>
     e. SESSION_SECRET="cameragrammar"
+    <br>
 5. Run MySQL and run the database with the following commands:
+    <br>
     a. 'mysql -u root -p'
+    <br>
     b. 'USE mvc_db'
+    <br>
     c. 'quit'
+    <br>
 6. Invoke App.js using the command 'node App.js'.
 7. Navigate to the app locally using your browser to go to 'http://localhost:3000/'
 
