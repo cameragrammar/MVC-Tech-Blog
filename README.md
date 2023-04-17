@@ -104,13 +104,13 @@ After installation:
 ### **Screenshots**
 --- 
 Home (To view all posts) <br>
-![view posts](../assets/home-screen.jpg)
+![view posts](../assets/home-screen.JPG)
 <br>
 Login/Registration <br>
-![login](../assets/login-screen.jpg)
+![login](../assets/login-screen.JPG)
 <br>
 View your own posts upon login/registration <br>
-![dashboard](../assets/dashboard-screen.jpg)
+![dashboard](../assets/dashboard-screen.JPG)
 <br>
 
 ## Contributing 
