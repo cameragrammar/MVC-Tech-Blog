@@ -63,6 +63,7 @@ To run this app locally:
 Technologies used: 
 - Javascript
 - Node.js
+- Express.js
 - Git
 - Heroku
 
@@ -103,13 +104,13 @@ After installation:
 ### **Screenshots**
 --- 
 Home (To view all posts) <br>
-![view posts](./assets/home-screen.jpg)
+![view posts](/assets/home-screen.jpg)
 <br>
 Login/Registration <br>
-![login](./assets/login-screen.jpg)
+![login](/assets/login-screen.jpg)
 <br>
 View your own posts upon login/registration <br>
-![Update/delete/comment](./assets/dashboard-screen.jpg)
+![dashboard](/assets/dashboard-screen.jpg)
 <br>
 
 ## Contributing 
